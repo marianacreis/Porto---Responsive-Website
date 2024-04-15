@@ -2,7 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-container {
+.container {
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -56,4 +56,56 @@ header .button {
   padding: 16px 32px;
   display: inline-block;
   margin-top: 20px;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/290/original/footer.jpeg?1713191141");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+footer p {
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 20px;
+}
+
+.grid {
+  display: grid;
+}
+
+.footer-grid {
+  grid-template-columns: 1fr 2fr 2fr;
+  padding: 100px;
+  column-gap: 50px;
+}
+
+.footer-grid .col {
+  margin: 0 auto;
 }
