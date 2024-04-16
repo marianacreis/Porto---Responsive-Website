@@ -59,9 +59,12 @@ header .button {
   margin-top: 20px;
 }
 
+main {
+  background-color: white;
+}
+
 section {
   padding: 100px;
-  background-color: white;
 }
 
 .why-porto-grid {
@@ -93,6 +96,87 @@ section p {
   font-size: 16px;
   font-weight: 400;
   margin-top: 16px;
+}
+
+.secondary {
+  background-color: #f8f8f8;
+}
+
+.secondary h3 {
+  text-align: center;
+}
+
+.secondary h2 {
+  text-align: center;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 64px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+}
+
+.card-header {
+  grid-template-columns: 1fr 1fr;
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.embed {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-body h4 {
+  color: rgb(39, 32, 68);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+}
+
+.card-body p {
+  color: rgb(39, 32, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card-body h5 {
+  color: rgb(39, 32, 68);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  margin: 0;
+}
+
+.card-footer {
+  text-align: center;
+  padding: 0 30px 30px;
+}
+
+.card-footer a {
+  color: white;
+  background-color: rgb(70, 44, 179);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 21px;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
 }
 
 footer {
