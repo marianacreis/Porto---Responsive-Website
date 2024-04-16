@@ -80,6 +80,7 @@ section h3 {
   line-height: 24px;
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 section h2 {
@@ -88,6 +89,7 @@ section h2 {
   font-weight: 700;
   line-height: 60px;
   margin: 0;
+  text-align: center;
 }
 
 section p {
@@ -177,6 +179,15 @@ section p {
   padding: 16px;
   text-decoration: none;
   display: block;
+}
+
+.gallery {
+  background-color: white;
+}
+
+.instagram-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 64px;
 }
 
 footer {
