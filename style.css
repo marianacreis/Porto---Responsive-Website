@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(39, 32, 68);
+  background-color: #091f2a;
 }
 
 .container {
@@ -27,6 +27,7 @@ header h3 {
   font-weight: 900;
   letter-spacing: 5px;
   line-height: 36px;
+  margin: 0;
 }
 
 header h1 {
@@ -34,8 +35,7 @@ header h1 {
   font-size: 96px;
   font-weight: 700px;
   line-height: 96px;
-  margin-top: 30px;
-  margin-bottom: -20px;
+  margin: 30px 0;
 }
 
 header h2 {
@@ -43,9 +43,11 @@ header h2 {
   font-size: 28px;
   font-weight: 300;
   line-height: 60px;
+  margin: 0;
 }
 
 header .button {
+  display: inline-block;
   background-color: white;
   color: black;
   text-decoration: none;
@@ -55,8 +57,12 @@ header .button {
   letter-spacing: 3px;
   line-height: 21px;
   padding: 16px 32px;
-  display: inline-block;
-  margin-top: 20px;
+  margin-top: 32px;
+}
+
+header .button:hover {
+  opacity: 0.8;
+  transition: 150ms all ease;
 }
 
 main {
@@ -65,14 +71,15 @@ main {
 
 section {
   padding: 100px;
+  color: rgb(39, 32, 68);
 }
 
 .why-porto-grid {
   grid-template-columns: 1fr 1fr;
+  grid-gap: 64px;
 }
 
 section h3 {
-  color: rgb(39, 32, 68);
   opacity: 0.3;
   font-size: 16px;
   font-weight: 700;
@@ -80,20 +87,16 @@ section h3 {
   line-height: 24px;
   margin: 0;
   text-transform: uppercase;
-  text-align: center;
 }
 
 section h2 {
-  color: rgb(39, 32, 68);
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
   margin: 0;
-  text-align: center;
 }
 
 section p {
-  color: rgb(39, 32, 68);
   opacity: 0.7;
   font-size: 16px;
   font-weight: 400;
@@ -127,7 +130,6 @@ section p {
 }
 
 .responsive-image {
-  width: 100%;
   max-width: 100%;
 }
 
@@ -138,10 +140,10 @@ section p {
 
 .card-body {
   padding: 30px;
+  color: rgb(39, 32, 68);
 }
 
 .card-body h4 {
-  color: rgb(39, 32, 68);
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
@@ -149,14 +151,12 @@ section p {
 }
 
 .card-body p {
-  color: rgb(39, 32, 68);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
 .card-body h5 {
-  color: rgb(39, 32, 68);
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;
@@ -169,8 +169,10 @@ section p {
 }
 
 .card-footer a {
+  display: block;
+
   color: white;
-  background-color: rgb(70, 44, 179);
+  background-color: #235873;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -178,11 +180,16 @@ section p {
   line-height: 21px;
   padding: 16px;
   text-decoration: none;
-  display: block;
+}
+
+.card-footer a:hover {
+  opacity: 0.8;
+  transition: 150ms all ease;
 }
 
 .gallery {
   background-color: white;
+  text-align: center;
 }
 
 .instagram-grid {
@@ -191,10 +198,7 @@ section p {
 }
 
 footer {
-  background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
-    ),
+  background-image: linear-gradient(rgba(9, 31, 42, 0.9), rgba(9, 31, 42, 0.9)),
     url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/290/original/footer.jpeg?1713191141");
   background-position: center;
   background-size: cover;
@@ -205,6 +209,12 @@ footer a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   opacity: 0.7;
+}
+
+footer a:hover {
+  color: white;
+  opacity: 10;
+  transition: 150ms all ease;
 }
 
 footer ul {
@@ -240,4 +250,85 @@ footer p {
 
 .footer-grid .col {
   margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  body {
+    margin: 0;
+    justify-content: center;
+  }
+  container {
+    max-width: 100%;
+  }
+
+  header {
+    max-width: 100%;
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  header h1 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .why-porto-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .responsive-image {
+    padding: 0;
+  }
+
+  section h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+
+  .secondary h3 {
+    margin: 0;
+  }
+
+  .card .responsive-image {
+    display: none;
+  }
+
+  .card-header {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .gallery h3 {
+    margin: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .footer-grid .col {
+    margin: 0;
+  }
 }
